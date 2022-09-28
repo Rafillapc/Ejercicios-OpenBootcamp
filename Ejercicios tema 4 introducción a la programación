@@ -1,0 +1,67 @@
+public class Main {
+    public static void main(String[] args) {
+        var numeroif = 4;
+        if (numeroif == 0) {
+            System.out.println("Es igual a cero");
+        } else if (numeroif < 0) {
+            System.out.println("Es menor  que cero");
+        } else if (numeroif >0) {
+            System.out.println("Es mayor que cero");
+        }
+
+
+
+
+        var numeroWhile = 1;
+
+        while (numeroWhile < 3) {
+            System.out.println(numeroWhile);
+            numeroWhile++;
+        }
+
+
+
+        var numeroDoWhile = 1;
+
+
+        do {
+            System.out.println(numeroDoWhile);
+            numeroDoWhile = numeroDoWhile+1;
+        }
+
+        while (numeroDoWhile == 1);
+
+
+
+
+        var numeroFor = 0;
+
+        for (numeroFor = 0; numeroFor<3; numeroFor++ ) {
+            System.out.println(numeroFor);
+        }
+
+
+
+
+        var estacion = "verano";
+
+        switch (estacion) {
+            case "verano":
+                System.out.println("Es verano");
+                break;
+            case "invierno":
+                System.out.println("Es invierno");
+                break;
+            case "Primavera":
+                System.out.println("Es primavera");
+                break;
+            case "Otoño":
+                System.out.println("Es otoño");
+                break;
+            default:
+                System.out.println("El valor no es una estación del año");
+        }
+    }
+}
+
+
