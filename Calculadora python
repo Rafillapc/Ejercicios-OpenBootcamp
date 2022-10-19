@@ -1,0 +1,55 @@
+#Este archivo python se llama calculadora
+
+def suma(a, b):
+    return a + b
+def resta(a, b):
+    return a - b
+def multiplicacion(a, b):
+    return a * b
+def division(a, b):
+    return a / b
+
+print("Por favor, selecciona tu operación:")
+print("1 - Suma")
+print("2 - Resta")
+print("3 - Multiplicación")
+print("4 - División")
+
+
+while True:
+    choice = input("Elija una opción (1 | 2 | 3 | 4): ")
+    if choice in ('1', '2', '3', '4'):
+        num1 = float(input("Introduce el primer número: "))
+        num2 = float(input("Introduce el segundo número: "))
+        if choice == '1':
+            print(f"{num1} + {num2} = ", suma(num1, num2))
+        elif choice == '2':
+            print(f"{num1} - {num2} = ", resta(num1, num2))
+        elif choice == '3':
+            print(f"{num1} * {num2} = ", multiplicacion(num1, num2))
+        elif choice == '4':
+            print(f"{num1} / {num2} = ", division(num1, num2))
+
+    else:
+        print("Tu opción no es válida.")
+
+    keep_running = input("Quieres continuar? Si o No?")
+    if keep_running in ('Si', 's', 'si', 'S', 'SI'):
+        continue
+    else:
+        break
+        
+        
+        
+        
+        
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+#He hecho un main y he importado el fichero calculadora, con el que solamente importandolo ejecuta las acciones de la calculadora.
+
+
+import calculadora
+
+def main():
+    print()
+        
