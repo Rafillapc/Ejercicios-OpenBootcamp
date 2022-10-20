@@ -1,0 +1,4 @@
+archivo=open('archivo1.txt', 'w')
+
+archivo.write("Hola mundo en archivos")
+archivo.close()
