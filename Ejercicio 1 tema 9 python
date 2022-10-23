@@ -1,0 +1,20 @@
+#¿Cuántos países?
+
+cantidad = 5
+
+print( f'Voy a solicitarte  {cantidad} países: ')
+
+paises = []
+
+for i in range(cantidad):
+    pais = input(f'Ingresa el primer país {i +1}: ')
+
+    paises.append(pais)
+
+#ahora mostramos los paises que se han ingresado
+
+print("Ingresaste los países: ")
+
+#Usamos sorted para imprimirlos por orden alfabetico
+
+print(sorted(paises))
